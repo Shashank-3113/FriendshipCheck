@@ -18,22 +18,22 @@ submitbtn.addEventListener("click", function(){
     category.style.fontSize = "18px";
     category.style.marginTop = "10px";
 
-    // Determine friendship category
+    
     if (randomval > 80) {
         category.textContent = "You are BEST FRIENDS! 🥳👯‍♀️";
-        category.style.color = "#2ecc71"; // Green
+        category.style.color = "#2ecc71"; 
     } else if (randomval > 50) {
         category.textContent = "You are GOOD FRIENDS! 😊👍";
-        category.style.color = "#3498db"; // Blue
+        category.style.color = "#3498db"; 
     } else if (randomval > 30) {
         category.textContent = "You are FRIENDS. 🙂";
-        category.style.color = "#f39c12"; // Orange
+        category.style.color = "#f39c12"; 
     } else {
-        category.textContent = "You are ENEMIES 😡💔";
-        category.style.color = "#e74c3c"; // Red
+        category.textContent = "You are STRANGERS😡💔";
+        category.style.color = "#e74c3c"; 
     }
 
-    // Add both elements to the DOM
+    
     showscore.appendChild(score);
     showscore.appendChild(category);
     
